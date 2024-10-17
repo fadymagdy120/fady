@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بيع ستاند موبايل خشبي</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- الشريط العلوي -->
+    <header>
+        <h1>بيع ستاند موبايل خشبي</h1>
+    </header>
+
+    <!-- صفحة المنتج -->
+    <section class="product">
+        <h2>ستاند موبايل خشبي</h2>
+        <img src="stand.jpg" alt="صورة ستاند الموبايل الخشبي" class="product-img">
+        <p>ستاند موبايل خشبي مصنوع بجودة عالية، مناسب لجميع أنواع الهواتف.</p>
+        <p><strong>السعر:</strong> 150 جنيه</p>
+
+        <!-- نموذج الطلب -->
+        <form id="order-form">
+            <label for="quantity">الكمية:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">العنوان:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <button type="submit">تأكيد الطلب</button>
+        </form>
+    </section>
+
+    <!-- رسالة التأكيد -->
+    <section id="confirmation-message" class="hidden">
+        <h3>تم استلام طلبك بنجاح!</h3>
+        <p>شكراً على طلبك. سنتواصل معك قريبًا لتأكيد تفاصيل التوصيل.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
